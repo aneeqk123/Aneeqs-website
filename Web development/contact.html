@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+    body {
+      background-color: #00008B; /* Dark blue */
+      color: white; /* Optional: makes text readable on dark background */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: lightgreen; /* Keeps your heading style */
+    }
+  </style>
+
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+  </head>
+<h2>Contact</h2>
+<form action="/submit-form" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="Phone number">Number:</label><br>
+  <input type="tel" id="Phone number" name="Phone number" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="date">Date:</label><br>
+  <input type="date" id="date" name="Date" required><br><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+  <!-- ✅ Checkbox -->
+  <input type="checkbox" id="updates" name="updates">
+  <label for="updates">I want to receive updates about this site</label><br><br>
+
+  <!-- ✅ Submit and Reset Buttons -->
+  <input type="submit" value="Send Message">
+  <input type="reset" value="Reset Form">
+  <script>
+    <button type="button" onclick="resetAndGoBack()">Reset Form & Go Back</button>
+
+<script>
+  function resetAndGoBack() {
+    document.querySelector("form").reset(); // Clears the form
+    window.location.href = "index.html";   // Redirects to homepage
+  }
+<a href="index.html">
+    <button type="button">Go Back to Home</button>
+  </a>
+
+  }
+</script>
+ </form>
+</html
